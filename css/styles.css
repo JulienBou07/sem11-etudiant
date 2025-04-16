@@ -19,6 +19,7 @@ html{
 body{
     background-image: url(../images/fond/global.png);
     background-repeat: repeat;
+    background-color: black;
     font: 400 1.6rem "Merriweather", serif;
     color: white;
 }
@@ -26,11 +27,25 @@ body{
 body a{
     color: white;
     text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 body a:hover{
     color: darkorange;
 }
+
+h2{
+    font: 3.2rem "Monoton", sans-serif;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+h2 span{
+    font: 1.8rem "Oranienbaum", serif;
+    text-transform: lowercase;
+}
+
 
 
 
@@ -43,7 +58,6 @@ body a:hover{
 
 
 
-
 /*---------------------------------------
                 header
  ---------------------------------------*/
@@ -51,7 +65,25 @@ body a:hover{
 /* INSÉREZ VOTRE CSS POUR CETTE SECTION ICI */
 
 
+header{
+    text-align: center;
+}
 
+header{
+    position: relative;
+}
+
+header a{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header h1{
+    font: 10rem "Monoton", sans-serif;
+
+}
 
 
 /*---------------------------------------
@@ -60,7 +92,42 @@ body a:hover{
 
 /* INSÉREZ VOTRE CSS POUR CETTE SECTION ICI */
 
+header, section {
+    min-height: 100vh;
+}
 
+div.boite {
+    width: 800px;
+    padding: 48px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    border-radius: 10px;
+    
+}
+
+header, section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+div.images a{
+    width: 200px;
+    text-align: center;
+}
+
+div.images img{
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
 
 
 /*---------------------------------------
@@ -69,8 +136,9 @@ body a:hover{
 
 /* INSÉREZ VOTRE CSS POUR CETTE SECTION ICI */
 
-
-
+section.sports{
+    background-image: url(../images/fond/bicycles.png);
+}
 
 
 /*---------------------------------------
@@ -79,9 +147,35 @@ body a:hover{
 
 /* INSÉREZ VOTRE CSS POUR CETTE SECTION ICI */
 
+section.web{
+    background-image: url(../images/fond/science.png);
+}
 
+section.web img{
+    width: 50%;
+}
 
+.web .images{
+    margin-bottom: 50px;
+}
 
+.web .images a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lien_float{
+    text-align: center;
+    background-color: darkred;
+    padding: 10px;
+
+}
+
+.lien_float a:hover{
+    color: white;
+    text-decoration: underline;
+}
 
 
 
